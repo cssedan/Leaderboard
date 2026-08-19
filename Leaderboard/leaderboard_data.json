@@ -1,0 +1,68 @@
+{
+    "players": [
+        {
+            "id": 1,
+            "name": "Franklin",
+            "total": 4
+        },
+        {
+            "id": 2,
+            "name": "Red",
+            "total": 12
+        },
+        {
+            "id": 3,
+            "name": "Josh",
+            "total": 1
+        },
+        {
+            "id": 4,
+            "name": "Gabe",
+            "total": 23
+        },
+        {
+            "id": 5,
+            "name": "Carlos",
+            "total": 1
+        },
+        {
+            "id": 6,
+            "name": "Joseph",
+            "total": 0
+        }
+    ],
+    "history": [
+        {
+            "date": "2026-08-17",
+            "created_at": "2026-08-19T11:50:00",
+            "scores": [
+                {
+                    "player_id": 1,
+                    "player_name": "Franklin",
+                    "tickets": 4
+                },
+                {
+                    "player_id": 2,
+                    "player_name": "Red",
+                    "tickets": 12
+                },
+                {
+                    "player_id": 3,
+                    "player_name": "Josh",
+                    "tickets": 1
+                },
+                {
+                    "player_id": 4,
+                    "player_name": "Gabe",
+                    "tickets": 23
+                },
+                {
+                    "player_id": 5,
+                    "player_name": "Carlos",
+                    "tickets": 1
+                }
+            ]
+        }
+    ],
+    "next_player_id": 7
+}

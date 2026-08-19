@@ -6,6 +6,7 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
+import os
 
 
 # =========================================================
@@ -13,7 +14,20 @@ import streamlit as st
 # =========================================================
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_FILE = BASE_DIR / "leaderboard_data.json"
+
+DATA_DIR = Path(
+    os.getenv(
+        "DATA_DIR",
+        str(BASE_DIR),
+    )
+)
+
+DATA_DIR.mkdir(
+    parents=True,
+    exist_ok=True,
+)
+
+DATA_FILE = DATA_DIR / "leaderboard_data.json"
 
 POSITION_ASSETS_DIR = BASE_DIR / "assets" / "positions"
 UI_ASSETS_DIR = BASE_DIR / "assets" / "ui"
